@@ -116,11 +116,6 @@ body{
     right: -600px;
     top: -300px;
 }
-.div4{
-    position: relative;
-    left: -100px;
-    top: -330px;
-}
 .contacto{
     text-align: center;
     margin-top: 50px;
@@ -187,8 +182,8 @@ div iframe{
 .span2{
     display: flex;
 }
-main div{
-    display: flex;
+.divv{
+ display: flex;   
 }
 .div4{
     display:flex ;

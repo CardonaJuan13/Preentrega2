@@ -61,6 +61,7 @@ div h3{
 }
 .section1{
     position: relative;
+    display: flex;
 
 }
 .p1{
@@ -182,4 +183,13 @@ footer iframe{
 }
 div iframe{
     max-width: 500px;
+}
+.span2{
+    display: flex;
+}
+main div{
+    display: flex;
+}
+.div4{
+    display:flex ;
 }

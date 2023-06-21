@@ -190,3 +190,8 @@ body{
     top: -450px;
 
 }
+@media (max-width:320px){
+    .navp{
+       font-size: small;
+    }
+}

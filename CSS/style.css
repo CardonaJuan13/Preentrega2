@@ -187,3 +187,8 @@ div iframe{
 .div4{
     display:flex ;
 }
+@media (max-width:768px){
+    .div4{
+        flex-direction: column;
+    }
+}

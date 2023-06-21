@@ -191,4 +191,10 @@ div iframe{
     .div4{
         flex-direction: column;
     }
+    .div2{
+        flex-direction: column;
+    }
+    .divv{
+        flex-direction: column;
+    }
 }

@@ -195,6 +195,9 @@ div iframe{
     .divv{
         flex-direction: column;
     }
+    .ul{
+        flex-direction: column;
+    }
 
 }
 .ul{

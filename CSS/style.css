@@ -197,11 +197,12 @@ div iframe{
     }
     .ul{
         display: flex;
-        flex-direction: column;
     }
+
 }
 .ul{
     list-style: none;
     display: flex;
+    margin-left: 0px;
 
 }

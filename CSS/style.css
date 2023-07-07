@@ -80,15 +80,14 @@ footer p{
 }
 .pr{
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
 }
 main img{
     width: 200px;
     height:180px ;
     margin: 9%;
     border-radius: 10px;
-}
-.sp{
-    text-align: center;
 }
 body{
     background-image: url(https://i.pinimg.com/564x/82/e2/a9/82e2a977911c078fd75a65db29a281d2.jpg);
@@ -279,4 +278,88 @@ div iframe{
 }
 .iframe-maps{
     grid-area: "iframe";
+}
+.carousel-inner{
+    width: 100%;
+    height: auto;
+}
+.container-carrusel{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+.texto-carrusel{
+    grid-row: 1;
+}
+.carrusel-productos{
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 350px;
+}
+.budin{
+    width: 300px;
+    height: 350px;
+}
+.pan3-carrusel{
+    width: 300px;
+    height: 350px;
+}
+.torta-carrusel{
+    width: 300px;
+    height: 350px;
+}
+.container-productos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-gap: -50px;
+}
+.factura2-carrusel{
+    width: 300px;
+    height: 350px;
+}
+.brownie-carrusel{
+    width: 300px;
+    height: 350px;
+}
+.dona-carrusel{
+    width: 300px;
+    height: 350px;
+}
+.texto-carrusel1{
+    grid-row: 1;
+    text-align: center;
+}
+.carruseñ-productos{
+    width: 300px;
+    height: 350px;
+}
+@media (max-width:768px){
+    .container-productos, .container-carrusel,.footer-productos,.locales-container {
+        flex-direction: column;
+    }
+}
+.footer-productos{
+    display: flex;
+}
+@media (max-width:768px){
+    .iframe-eureka, .iframe-el-artesano, .iframe-Ramos{
+        width: 412px;
+        height: 450px;
+        align-items: center;
+
+    }
+}
+@media (max-width:768px){
+    .container-inicio, .container-inicio-2, .container-inicio-3{
+        flex-direction: column;
+    }
 }

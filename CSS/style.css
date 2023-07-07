@@ -359,7 +359,10 @@ div iframe{
     }
 }
 @media (max-width:768px){
-    .container-inicio, .container-inicio-2, .container-inicio-3{
+    .container-inicio, .container-inicio-2, .container-inicio-3, .container-locales{
         flex-direction: column;
     }
+}
+.h2-locales{
+    text-align: center;
 }

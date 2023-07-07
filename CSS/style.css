@@ -6,6 +6,7 @@ img{
     width: 100px;
     height: 100px;
 }
+/*Estilos de la Nav*/
 ul a{
     display: flex;
     display: inline;
@@ -27,15 +28,18 @@ div h1{
     margin-top: 50px;
 }
 .facturas1{
-    width: 360px;
+    border-radius: 10px;
+    width: 300px;
     height: 260px;
+    grid-area: "imagen";
 }
 .parrafo1{
     text-align: left;
+    grid-area: "texto";
 }
 .iframe{
-width: 480px;
-height: 300px;
+    width: 480px;
+    height: 300px;
 }
 span{
     display: flex;
@@ -43,14 +47,12 @@ span{
 
 }
 .pan2{
+    border-radius: 10px;
     width: 480px;
     height: 300px;
 }
-.div2{
+.div-titulo3{
     display: flex;
-}
-.p3{
-  font-family: 'Times New Roman', Times, serif;
 }
 div h3{
     text-align: justify;
@@ -65,6 +67,7 @@ div h3{
     text-align: center;
 }
 footer iframe{
+    border-radius: 10px;
     width: 400px;
     height: 250px;
 }
@@ -82,18 +85,16 @@ main img{
     width: 200px;
     height:180px ;
     margin: 9%;
+    border-radius: 10px;
 }
 .sp{
     text-align: center;
 }
 body{
-    background-image: url(https://previews.123rf.com/images/teploleta/teploleta1507/teploleta150700232/42280315-mano-panader%C3%ADa-dibujado-patr%C3%B3n-de-fondo-sin-fisuras.jpg);
+    background-image: url(https://i.pinimg.com/564x/82/e2/a9/82e2a977911c078fd75a65db29a281d2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-.parrafo2{
-    font-family: 'Times New Roman', Times, serif;
 }
 .div3{
     text-align: left;
@@ -104,14 +105,12 @@ body{
     text-align: center;
 }
 .parrafo2{
-    position: relative;
-    right: -600px;
-    top: -300px;
+    font-family: 'Times New Roman', Times, serif;
+    grid-area: "texto";
 }
 .parrafo3{
-    position: relative;
-    right: -600px;
-    top: -300px;
+    grid-area:"texto";
+    font-family: 'Times New Roman', Times, serif;
 }
 .contacto{
     text-align: center;
@@ -120,6 +119,7 @@ body{
 .iframe1{
     position: relative;
     right: -320px;
+    border-radius: 10px;
 }
 .div5{
     position: relative;
@@ -141,22 +141,18 @@ body{
     position: relative;
     top: -300px;
 }
-.div7{
-    padding-top: 50px;
-}
 .pan3{
-    width: 600px;
-    height: 500px;
-    position: relative;
-    right: -780px;
-    top: -500px;
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    grid-area:"imagen";
+    padding: 20px;
+    object-fit: cover;
 }
 .parrafo4{
-    text-align: left;
-    position: relative;
-    width: 910px;
-    bottom: -100px;
+    padding: 20px;
     overflow: hidden;
+    grid-area: "texto";
 }
 .iframe3{
     position: relative;
@@ -164,6 +160,7 @@ body{
     right: -1000px;
     width: 500px;
     height: 500px;
+    border-radius: 10px;
 }
 .div8{
     position: relative;
@@ -174,28 +171,20 @@ footer iframe{
     max-width: 500px;
 }
 div iframe{
+    border-radius: 10px;
     max-width: 500px;
 }
 .span2{
     display: flex;
 }
-.divv{
- display: flex;   
+.div-contenido{
+ display: flex;  
 }
-.div4{
+.div-titulo2{
     display:flex ;
 }
 @media (max-width:768px){
-    .div4{
-        flex-direction: column;
-    }
-    .div2{
-        flex-direction: column;
-    }
-    .divv{
-        flex-direction: column;
-    }
-    .ul{
+    .contenido-2, .contenido-3, .div-contenido, .ul{
         flex-direction: column;
     }
 
@@ -205,4 +194,89 @@ div iframe{
     display: flex;
     margin-left: 0px;
 
+}
+.container-titulo{
+    display: grid;
+    grid-template-columns:auto 1fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "texto imagen";
+    grid-gap: 20px;
+}
+.div-contenido{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 
+    "texto imagen";
+}
+.grid-container-titulo{
+    display: grid;
+    grid-template-columns:auto 1fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "texto imagen";
+}
+.grid-container-contenido{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+    "texto imagen";
+}
+.titulo{
+    grid-area: "titulo";
+}
+.Titulo-Principal{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: solid;
+}
+.segundo-titulo{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "texto imagen";
+    grid-area: "titulo";
+}
+.contenido-2{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+    "texto iframe"
+}
+.iframe-tutorial{
+    grid-area: "iframe";
+}
+.titulo-tercero{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "texto imagen";
+}
+.contenido-3{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+    "texto imagen";
+}
+.container-footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "redes redes iframe"
+    "contactos contactos iframe";
+    grid-gap: 20px;
+}
+.redes-sociales{
+    grid-area: "redes";
+}
+.ir-contacto{
+    grid-area: "contactos";
+    text-decoration: none;
+}
+.iframe-maps{
+    grid-area: "iframe";
 }
